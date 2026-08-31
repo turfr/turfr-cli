@@ -1,0 +1,16 @@
+NFR-CLI-001: Portability
+
+The Turfr CLI MUST operate on:
+- Windows
+- macOS
+- Linux
+
+The user MUST be able to invoke the CLI using:
+
+    turfr <command>
+
+The CLI MUST NOT depend on:
+- OS-specific shell behavior
+- OS-specific filesystem paths
+- a specific working directory
+- globally installed project source code

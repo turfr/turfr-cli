@@ -1,0 +1,11 @@
+E.g.
+`npm start -- player add Swar 9876543210`
+
+process.argv
+     │
+     ├── [0] Node executable
+     ├── [1] Your program
+     ├── [2] player
+     ├── [3] add
+     ├── [4] Swar
+     └── [5] 9876543210

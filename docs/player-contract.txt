@@ -1,0 +1,32 @@
+ENTITY: Player
+
+id
+    Immutable system-generated identifier.
+
+name
+    Human-readable display name.
+    Not unique.
+    Mutable.
+
+phone
+    WhatsApp number.
+    Unique among active players.
+    Mutable.
+
+createdAt
+    Time the player entered the registry.
+
+updatedAt
+    Time the player record was last changed.
+
+
+
+
+IDENTITY RESOLUTION
+
+Given a participant:
+    1. Attempt deterministic resolution.
+    2. If exactly one player matches → resolve automatically.
+    3. If multiple players match → request human clarification.
+    4. If no player matches → offer creation of a new player.
+    5. Never silently assign an ambiguous participant.
